@@ -5,11 +5,22 @@ import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 
 
+
+import {LoginPage} from './pages/login/login';
+import * as firebase from 'firebase';
 import {CompaniesListPage} from './pages/companies-list/companies-list';
 
 @Component({
   templateUrl: 'build/app.html'
 })
+
+var config = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  storageBucket: "",
+};
+
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -34,10 +45,21 @@ class MyApp {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
+      firebase.initializeApp(config);
       StatusBar.styleDefault();
     });
   }
 
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      // If there's a user take him to the home page.
+      this.rootPage = HomePage;
+    } else {
+    // If there's no user logged in send him to the LoginPage
+      this.rootPage = LoginPage;
+    }
+
+  });
   openPage(page) {
     // close the menu when clicking a link from the menu
     this.menu.close();
