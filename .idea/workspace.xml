@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58cbcf54-e907-463e-a417-b9ae759dadc6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.ts" afterPath="$PROJECT_DIR$/app/app.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typings.json" afterPath="$PROJECT_DIR$/typings.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typings/index.d.ts" afterPath="$PROJECT_DIR$/typings/index.d.ts" />
-    </list>
+    <list default="true" id="58cbcf54-e907-463e-a417-b9ae759dadc6" name="Default" comment="" />
     <ignored path="ionicExpense.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -583,12 +578,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1470235781618</updated>
-      <workItem from="1470235787337" duration="19501000" />
+      <workItem from="1470235787337" duration="19682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19501000" />
+    <option name="totallyTimeSpent" value="19682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1608" height="864" extended-state="6" />
